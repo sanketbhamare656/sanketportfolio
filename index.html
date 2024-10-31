@@ -1,0 +1,529 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sanket's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Sanket Bhamare</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Sanket Bhamare</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Sanket Bhamare</h1>
+        <p class="section__text__p2">
+          <span class="typed-text"></span><span class="cursor">&nbsp;</span>
+        </p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/Sanket_resume.pdf')">Download CV</button>
+          <!-- <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button> -->
+        </div>
+      </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/bhamare-sanket'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/sanketbhamare656'"
+          />
+          <img
+            src="./assets/gfg.png"
+            alt="My gfg profile"
+            class="icon"
+            onclick="location.href='https://www.geeksforgeeks.org/user/sanketbhavod9/'"
+          />
+          <img
+            src="./assets/insta.png"
+            alt="My insta profile"
+            class="icon"
+            onclick="location.href='https://www.instagram.com/bhamare_sanket_222'"
+          />
+          <img
+          src="./assets/yt.png"
+          alt="My youtube profile"
+          class="icon"
+          onclick="location.href='https://www.youtube.com/channel/UCN9tKa3h94M5uWH0SQP-zRA'"
+        />
+          <!-- <img
+            src="./assets/x.png"
+            alt="My x profile"
+            class="icon"
+            onclick="location.href='https://x.com/sanket656?t=COPBKsH2_I-yjj9-iOMkkA&s=08 '"
+          /> -->
+          
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-profile.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Intern Backend Developer at <a href="https://tachyonbyte.com/">TachyonByte Technologies Private Limited </a><br> Present<br /></p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Diploma in CS from Govt.College Dhule 2023<br />BTech in Cyber Security and forensics at Sundip University.</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I'm <b>Sanket Bhamare</b>, a BTech student with a passion for technology and software development. 
+              I enjoy solving complex problems, especially in <b>Java</b> and competitive programming. Currently, 
+              I'm working on projects that merge innovation with practical applications, aiming to build efficient,
+               scalable solutions. With a strong focus on continuous learning, I'm always eager to expand my technical
+                skills and collaborate on impactful projects..
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      /> -->
+    </section>
+    <!------Extra activity------------------------->
+    
+    <!------------------------------------------------------------------------------------------------------->
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skill</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <!-- <h3>SASS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                /> -->
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                 <div>
+                  <h3>JAVA</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                /> 
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div> 
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                /> 
+                <div>
+                  <h3>DSA</h3>
+                  <p>Intermediate</p>
+                </div> 
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title"> Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>DBMS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Cyber Security</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Linux</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Computer Network</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Operating System</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      /> -->
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/myportfolio.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">My Portfolio</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn btn-disabled"
+                onclick="location.href='https://github.com/sanketbhamare656/MyPortfolio-.git'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn btn-disabled"
+                onclick="location.href='https://sanketportfolio-sanket-bhamares-projects.vercel.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/phishNet.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">PhishNet</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn btn-disabled"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn btn-disabled"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+            
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/sukoonn.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Sukoon-The Peace Within</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn btn-disabled "
+                onclick="location.href=''"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn "
+                onclick="location.href='https://sukoon-the-peace-within.vercel.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+            
+          </div>
+          
+        </div>
+        
+      </div>
+      <!----------------Extra ------------------------------>
+      <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About My Extra Activity</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/its-me.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/gfg.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>GeeksForGeeks Profile</h3></br>
+              <div class="btn-container"></div>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://www.geeksforgeeks.org/user/sanketbhavod9/'"
+                >
+                  Visit Profile !
+                </button>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Articles</h3>
+              <p>Read & Rate My Articles<br /></p>
+              <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://javaarticalbysanket.blogspot.com/2024/09/'"
+                >
+                  Read !
+                </button>
+            </div>
+          </div>
+          <!-- <div class="text-container">
+            <p>
+              I'm <b>Sanket Bhamare</b>, a BTech student with a passion for technology and software development. 
+              I enjoy solving complex problems, especially in <b>Java</b> and competitive programming. Currently, 
+              I'm working on projects that merge innovation with practical applications, aiming to build efficient,
+               scalable solutions. With a strong focus on continuous learning, I'm always eager to expand my technical
+                skills and collaborate on impactful projects.
+            </p>
+          </div> -->
+        </div>
+      </div>
+      <!-- <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      /> -->
+    </section>
+
+      <!------------------------------------------------------------------>
+  <div class="text-container">
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:sanketbhamare397@gmail.com">sanketbhamare397@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/bhamare-sanket/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Sanket Bhamare. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
