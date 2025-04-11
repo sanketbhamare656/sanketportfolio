@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Add these meta tags -->
+    <meta name="color-scheme" content="dark light">
+    <meta name="theme-color" content="#121212"> <!-- Dark theme color for mobile browsers -->
+    <title>Sanket's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button class="theme-toggle" aria-label="Toggle theme">
+            <i class="fas fa-sun"></i> <!-- Starts with sun icon (dark mode active) -->
+        </button>
+    </div>
+
+    <nav id="desktop-nav">
+        <div class="logo">Sanket Bhamare</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Sanket Bhamare</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#achievements" onclick="toggleMenu()">Achievements</a></li>
+                <li><a href="#certificates" onclick="toggleMenu()">Certificates</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div id="particles-js"></div>
+        <div class="section__pic-container">
+            <img src="./assets/images/profile-pic copy.png" alt="Sanket Bhamare profile picture" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Sanket Bhamare</h1>
+            <p class="section__text__p2">
+                <span class="typed-text"></span><span class="cursor">&nbsp;</span>
+            </p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Sanket_resume.pdf')">Download CV</button>
+            </div>
+        </div>
+        <div id="socials-container">
+            <!-- LinkedIn -->
+            <img src="./assets/icons/linkedin.png" alt="LinkedIn" class="icon"
+                onclick="window.open('https://www.linkedin.com/in/bhamare-sanket')" />
+
+            <!-- GitHub -->
+            <img src="./assets/icons/github.png" alt="GitHub" class="icon"
+                onclick="window.open('https://github.com/sanketbhamare656')" />
+
+            <!-- GFG -->
+            <img src="./assets/icons/gfg.png" alt="GFG" class="icon"
+                onclick="window.open('https://www.geeksforgeeks.org/user/sanketbhavod9/')" />
+
+            <!-- Instagram (Corrected) -->
+            <img src="./assets/icons/instagram.png" alt="Instagram" class="icon"
+                onclick="window.open('https://www.instagram.com/iamsanketbhamare')" />
+
+                <img src="./assets/icons/blog.png" alt="Bolgger" class="icon"
+                onclick="window.open('https://sanketbhamareblog.blogspot.com/')" />
+
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <!-- <div class="section__pic-container">
+                 <img src="./assets/about-profile.png" alt="Profile picture" class="about-pic" /> 
+            </div> -->
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/icons/experience.png" alt="Experience icon" class="icon" />
+                        <h3>Experience</h3>
+                        <p>Intern Backend Developer at <br><a href="https://tachyonbyte.com/">TachyonByte Technologies
+                                Private Limited, Nashik</a><br> <br>Oct 2024 - Present<br /></p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/icons/education.png" alt="Education icon" class="icon" />
+                        <h3>Education</h3>
+                        <p>Diploma in Computer Science from <br><a href="https://www.gpdhule.org.in/">Government
+                                Polytechnic College, Dhule</a> <br>2023<br /><br>BTech in Cyber Security and forensics
+                            at
+                            <br> <a href="https://www.sandipuniversity.edu.in/">Sandip University, Nashik
+                            </a><br>Present
+                        </p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        I'm <b>Sanket Bhamare</b>, a BTech student with a passion for technology and software
+                        development.
+                        I enjoy solving complex problems, especially in <b>Java</b> and competitive programming.
+                        Currently,
+                        I'm working on projects that merge innovation with practical applications, aiming to build
+                        efficient,
+                        scalable solutions. With a strong focus on continuous learning, I'm always eager to expand my
+                        technical
+                        skills and collaborate on impactful projects.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h2>Development</h2>
+                <div class="skills-grid">
+                    <div class="skill-item" data-skill="HTML">
+                        <img src="./assets/icons/html.png" alt="HTML">
+                        <span>HTML</span>
+                        <div class="skill-level" style="width: 80%;"></div>
+                    </div>
+                    <div class="skill-item" data-skill="CSS">
+                        <img src="./assets/icons/css.png" alt="CSS">
+                        <span>CSS</span>
+                        <div class="skill-level" style="width: 70%;"></div>
+                    </div>
+                    <div class="skill-item" data-skill="JavaScript">
+                        <img src="./assets/icons/js.png" alt="JavaScript">
+                        <span>JavaScript</span>
+                        <div class="skill-level" style="width: 65%;"></div>
+                    </div>
+                    <div class="skill-item" data-skill="Java">
+                        <img src="./assets/icons/java.png" alt="Java">
+                        <span>Java</span>
+                        <div class="skill-level" style="width: 85%;"></div>
+                    </div>
+                    <div class="skill-item" data-skill="Python">
+                        <img src="./assets/icons/python.png" alt="Python">
+                        <span>Python</span>
+                        <div class="skill-level" style="width: 75%;"></div>
+                    </div>
+                    <div class="skill-item" data-skill="DSA">
+                        <img src="./assets/icons/golang.png" alt="golang">
+                        <span>GoLang</span>
+                        <div class="skill-level" style="width: 80%;"></div>
+                    </div>
+                    <div class="skill-item" data-skill="DSA">
+                        <img src="./assets/icons/git.png" alt="git">
+                        <span>Git</span>
+                        <div class="skill-level" style="width: 80%;"></div>
+                    </div>
+                    <div class="skill-item" data-skill="DSA">
+                        <img src="./assets/icons/docker.png" alt="docker">
+                        <span>Docker</span>
+                        <div class="skill-level" style="width: 80%;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h2>framework's </h2>
+                <div class="skills-grid">
+                    <div class="skill-item" data-skill="DBMS">
+                        <img src="./assets/icons/flask.png" alt="DBMS">
+                        <span>Flask (Python)</span>
+                        <div class="skill-level" style="width: 70%;"></div>
+                    </div>
+                    <div class="skill-item" data-skill="Cyber Security">
+                        <img src="./assets/icons/dj.png" alt="Cyber Security">
+                        <span>Django (Python)</span>
+                        <div class="skill-level" style="width: 75%;"></div>
+                    </div>
+                    <div class="skill-item" data-skill="Linux">
+                        <img src="./assets/icons/fastapi.png" alt="Linux">
+                        <span>FastApi (Python)</span>
+                        <div class="skill-level" style="width: 65%;"></div>
+                    </div>
+                    <div class="skill-item" data-skill="Networking">
+                        <img src="./assets/icons/fibergo.png" alt="Networking">
+                        <span>Fiber (GoLang)</span>
+                        <div class="skill-level" style="width: 70%;"></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="skill-category">
+                <h2>Other Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-item" data-skill="DBMS">
+                        <img src="./assets/icons/sql.png" alt="DBMS">
+                        <span>SQL-DBMS</span>
+                        <div class="skill-level" style="width: 70%;"></div>
+                    </div>
+                    <div class="skill-item" data-skill="Cyber Security">
+                        <img src="./assets/icons/mongodb.png" alt="Cyber Security">
+                        <span>MongoDB-DBMS</span>
+                        <div class="skill-level" style="width: 75%;"></div>
+                    </div>
+                    <div class="skill-item" data-skill="Linux">
+                        <img src="./assets/icons/linux.png" alt="Linux">
+                        <span>Linux-OS</span>
+                        <div class="skill-level" style="width: 65%;"></div>
+                    </div>
+                    <div class="skill-item" data-skill="Networking">
+                        <img src="./assets/icons/network.png" alt="Networking">
+                        <span>Networking</span>
+                        <div class="skill-level" style="width: 70%;"></div>
+                    </div>
+                    <div class="skill-item" data-skill="OS">
+                        <img src="./assets/icons/os.png" alt="Operating System">
+                        <span>OS</span>
+                        <div class="skill-level" style="width: 75%;"></div>
+                    </div>
+                    <div class="skill-item" data-skill="OS">
+                        <img src="./assets/icons/github.png" alt="github">
+                        <span>GitHub</span>
+                        <div class="skill-level" style="width: 75%;"></div>
+                    </div>
+                    <div class="skill-item" data-skill="OS">
+                        <img src="./assets/icons/gitlab.png" alt="gitlab">
+                        <span>GitLab</span>
+                        <div class="skill-level" style="width: 75%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="projects-slider">
+            <div class="slider-container">
+                <div class="slide active">
+                    <div class="project-card">
+                        <img src="./assets/images/portfolio.png" alt="Project 1" class="project-img" />
+                        <div class="project-info">
+                            <h2>My Portfolio</h2>
+                            <p>Designed and developed a personal portfolio website using HTML, CSS, and JavaScript.
+                                Features a responsive design, project showcase, and interactive elements for better
+                                engagement. Deployed for seamless access across devices.</p>
+                            <div class="project-links">
+                                <a href="#" target="_blank">GitHub</a>
+                                <a href="https://sanketbhamare.me/" target="_blank">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="project-card">
+                        <img src="./assets/images/phishnet-desk.png" alt="Project 2" class="project-img" />
+                        <div class="project-info">
+                            <h2>PhishNet</h2>
+                            <p>A An all-in-one cybersecurity solution offering advanced services like SMS scam
+                                detection, phone number and URL scanning, browser extension security, AI-powered threat
+                                analysis, and a cybersecurity newsletter.</p>
+                            <div class="project-links">
+                                <a href="#" target="_blank">GitHub</a>
+                                <a href="#" target="_blank">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="project-card">
+                        <img src="./assets/images/resumehub.png" alt="Project 2" class="project-img" />
+                        <div class="project-info">
+                            <h2>ResumeHub</h2>
+                            <p>Create standout resumes that get you hired
+                                Build professional resumes in minutes with our easy-to-use builder. Stand out from the crowd and land your dream job.</p>
+                            <div class="project-links">
+                                <a href="#" target="_blank">GitHub</a>
+                                <a href="#" target="_blank">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="project-card">
+                        <img src="./assets/images/fald.png" alt="Project 2" class="project-img" />
+                        <div class="project-info">
+                            <h2>Facial Landmark Detection</h2>
+                            <p>Developed a facial landmark detection system using dlib to identify key facial features.
+                                Utilized machine learning for precise feature mapping, enabling applications in face
+                                recognition, emotion analysis, and AR filters.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/sanketbhamare656/FLDS-main.git" target="_blank">GitHub</a>
+                                <a href="#" target="_blank">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="project-card">
+                        <img src="./assets/images/sukoon.png" alt="Project 3" class="project-img" />
+                        <div class="project-info">
+                            <h2>Sukoon - The Peace Within</h2>
+                            <p>A mental wellness platform offering meditation and relaxation techniques.</p>
+                            <div class="project-links">
+                                <a href="#" target="_blank">GitHub</a>
+                                <a href="https://sukoon-the-peace-within.vercel.app/" target="_blank">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <div class="dots-container"></div>
+                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <button class="btn-more" onclick="location.href='https://github.com/sanketbhamare656'">View More Projects</button>
+        </div>
+    </section>
+
+    <section id="achievements">
+        <p class="section__text__p1">My Notable</p>
+        <h1 class="title">Achievements</h1>
+        <div class="achievements-slider">
+            <div class="slider-container">
+                <div class="slide active">
+                    <div class="achievement-card">
+                        <img src="./assets/images/innovera.jpeg" alt="Achievement 1" />
+                        <div class="achievement-info">
+                            <h3>Innovera National Level Hackathon Winner 2025</h3>
+                            <p>Won first prize in National Level Hackathon organized by K.K. Wagh College of Engineering, Nashik.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="achievement-card">
+                        <img src="./assets/images/techguru.jpeg" alt="Achievement 2" />
+                        <div class="achievement-info">
+                            <h3>TechGuru 2k25 Winner</h3>
+                            <p>We won the TechGuru 2k25 Project Competition organized by Guru Govind Singh College of Engineering, Nashik</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="achievement-card">
+                        <img src="./assets/images/avcoee.png" alt="Achievement 3" />
+                        <div class="achievement-info">
+                            <h3>Top Performer In Tech-Pragyan National Level Hackathon</h3>
+                            <p>Top Performer Rank in the National Level Hackathon organized by AVCOE, Sangamner! </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <div class="dots-container"></div>
+                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <button class="btn-more" onclick="location.href='https://www.linkedin.com/in/bhamare-sanket/recent-activity/all/'">View More Achievements</button>
+        </div>
+    </section>
+
+    <section id="certificates">
+        <p class="section__text__p1">My Professional</p>
+        <h1 class="title">Certificates</h1>
+        <div class="certificates-slider">
+            <div class="slider-container">
+                <div class="slide active">
+                    <div class="certificate-card">
+                        <img src="./assets/images/innovera-cer.jpeg" alt="Certificate 1" />
+                        <div class="certificate-info">
+                            <h3>JInnovera National Level Hackathon Winner 2025</h3>
+                            <p>2025</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="certificate-card">
+                        <img src="./assets/images/avoce-cer.jpeg" alt="Certificate 2" />
+                        <div class="certificate-info">
+                            <h3>Top Performer In Tech-Pragyan National Level Hackathon</h3>
+                            <p>2025</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="certificate-card">
+                        <img src="./assets/images/techguru-cer.jpeg" alt="Certificate 3" />
+                        <div class="certificate-info">
+                            <h3>TechGuru 2k25 Winner</h3>
+                            <p>2025</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="certificate-card">
+                        <img src="./assets/images/iq-cer.jpeg" alt="Certificate 2" />
+                        <div class="certificate-info">
+                            <h3>Entry Level Cyber Security and Ethical Hacking</h3>
+                            <p>EYEQDOTNET PVT LTD - 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="certificate-card">
+                        <img src="./assets/images/national-cer.jpeg" alt="Certificate 2" />
+                        <div class="certificate-info">
+                            <h3>National Coding League - SemiFinalist</h3>
+                            <p>Scaler- 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <div class="dots-container"></div>
+                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <button class="btn-more" onclick="location.href='https://www.linkedin.com/in/bhamare-sanket/details/certifications/'">View More Certificates</button>
+        </div>
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/icons/gmail.png" alt="Email icon" class="icon contact-icon email-icon" />
+                <p><a href="mailto:sanketbhamare397@gmail.com">sanketbhamare397@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/icons/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+                <p><a href="https://www.linkedin.com/in/bhamare-sanket/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+  <nav>
+    <div class="nav-links-container">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+    Top
+  </button>
+  <p>Copyright © 2024 Sanket Bhamare. All Rights Reserved.</p>
+</footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
